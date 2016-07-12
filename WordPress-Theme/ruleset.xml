@@ -9,6 +9,7 @@
 	<!-- Covers: https://github.com/Otto42/theme-check/blob/master/checks/phpshort.php -->
 	<rule ref="Generic.PHP.DisallowShortOpenTag" />
 
+
 	<!-- Only UNIX line endings allowed. -->
 	<!-- Covers: https://github.com/Otto42/theme-check/blob/master/checks/lineendings.php -->
 	<rule ref="Generic.Files.LineEndings">
@@ -20,6 +21,10 @@
 
 	<!-- No ByteOrderMark allowed - important to prevent issues with content being sent before headers. -->
 	<rule ref="Generic.Files.ByteOrderMark" />
+
+
+	<!-- Prevent path disclosure when using add_theme_page(). -->
+	<rule ref="WordPress.VIP.PluginMenuSlug"/>
 
 
 </ruleset>
