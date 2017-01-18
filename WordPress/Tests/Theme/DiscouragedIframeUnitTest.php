@@ -31,7 +31,7 @@ class WordPress_Tests_Theme_DiscouragedIframeUnitTest extends AbstractSniffUnitT
 	 */
 	public function getWarningList() {
 		return array(
-			2 => 1,
+			4 => 1,
 		);
 	}
 

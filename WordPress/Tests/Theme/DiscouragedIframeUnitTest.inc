@@ -1,3 +1,5 @@
+<?php
 
-<iframe src="http://example.com" > // Error.
+?>
+<iframe src="http://example.com" > // Warning.
 Sometime iframe is not harmful. // OK.
