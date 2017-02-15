@@ -21,7 +21,11 @@ class WordPress_Tests_Theme_DiscouragedIframeUnitTest extends AbstractSniffUnitT
 	 * @return array <int line number> => <int number of errors>
 	 */
 	public function getErrorList() {
-		return array();
+		return array(
+			5 => 1,
+			6 => 1,
+			8 => 1,
+		);
 	}
 
 	/**
@@ -30,11 +34,7 @@ class WordPress_Tests_Theme_DiscouragedIframeUnitTest extends AbstractSniffUnitT
 	 * @return array <int line number> => <int number of warnings>
 	 */
 	public function getWarningList() {
-		return array(
-			5 => 1,
-			6 => 1,
-			8 => 1,
-		);
+		return array();
 	}
 
 } // End class.

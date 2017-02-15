@@ -53,7 +53,7 @@ class WordPress_Sniffs_Theme_DiscouragedIframeSniff implements PHP_CodeSniffer_S
 		$token  = $tokens[ $stackPtr ];
 
 		if ( preg_match( $this->iframe_regex, $token['content'] ) > 0 ) {
-			$phpcsFile->addWarning( 'iframes can be used to load unwanted adverts and code. Check the iframe content.' , $stackPtr, 'DiscouragedIframe' );
+			$phpcsFile->addError( 'Usage of iframe is prohibited.' , $stackPtr, 'DiscouragedIframe' );
 		}
 
 	}
